@@ -1,6 +1,7 @@
 ### ROS noetic and moveit-instructions
 Instructions to install moveit from source if you are using a virtualbox.
 
+Remember that opening the terminal to access bash is as easy as pressing ctrl+alt+T at the same time.
 
 # ROS NOETIC INSTALL 
 ---
@@ -31,11 +32,11 @@ rosdep update
 sudo apt update -y
 sudo apt dist-upgrade  -y
 ```
-#Source installation requires wstool, catkin_tools, and optionally clang-format:
+Source installation requires wstool, catkin_tools, and optionally clang-format:
 ```
 sudo apt install python3-wstool python3-catkin-tools clang-format-10 -y
 ```
-#go to where you want the installation
+go to where you want the installation
 ```
 mkdir $HOME/workspace/ws_moveit -p
 cd $HOME/workspace/ws_moveit 
@@ -77,14 +78,14 @@ cd ~/workspace/ws_moveit
 source /opt/ros/noetic/setup.bash
 source ~/workspace/ws_moveit/devel/setup.bash 
 ```
-#In that same terminal 
+In that same terminal 
 ```
 roslaunch panda_moveit_config demo.launch
 ```
 
 
 
-#In the original terminal run the following after the previous command is fully loaded
+In the original terminal run the following after the previous command is fully loaded
 ```
 sudo apt install ros-noetic-rosbash -y
 rosrun moveit_tutorials pick_place_tutorial
