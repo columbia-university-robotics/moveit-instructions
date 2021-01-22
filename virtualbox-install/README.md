@@ -16,6 +16,7 @@ Go to ubuntu download page and get Ubuntu 20.04
 
 ### Step 3: Open VirtualBox
 Now open VirtualBox and Click on New button.
+
 ![new-button](./vm-media/1.png)
 
 
@@ -36,9 +37,10 @@ Here also I will go with a default setting that is VDI and click on next.
 
 Here you can either choose dynamically allocated or fixed size, both are excellent options. 
 I used to picture from the reference site , but I actually used fixed memory and it worked fine.
+
 ![memory-select](./vm-media/6.png)
 
-Now you have to select the size of the virtual hard disk. Site suggested to use more than 15 GB. (I actually chose 16 and fixed memory to push the limits)
+Now you have to select the size of the virtual hard disk. Site suggested to use more than 15 GB. (I actually chose 16 and fixed memory to push the limits and checked that when moveit and ROS were all installed the machine total memory used in 14.2GB .. I HIGHLY SUGGEST you use more memory if you can that way we can have some cushion space for more packages and cat videos if desired.. ESPECIALLY if you're using fixed memory)
 ![memsize-select](./vm-media/7.png)
 
 # Step 5: Insert the Ubuntu ISO file
@@ -61,6 +63,7 @@ Now select your preferred language and click on the Install Ubuntu button.
 
 Next, select the Keyboard layout, here I am choosing English US. You can select any other layout which you are using right now on your Windows 10 PC or laptop.
 In the next window, you will see several options, here I will also check the “install third-party software” and click on the continue button.
+
 ![thirdparty-select](./vm-media/13.png)
 
 Here in the installation type window, keep the default setting as it is and click on Install now button.
@@ -70,6 +73,7 @@ Here you will just receive a warning, which says if you continue the changes lis
 ![continue-select](./vm-media/15.png)
 In the next step, select your location and click on continue.
 Now the last thing you have to do is enter your name, computer name, username, and password and click on the continue button.
+
 ![password-select](./vm-media/16.png)
 
 And finally, the Ubuntu OS installation process will begin. Now you don’t have to do anything, sit back and relax and wait for the completion of installation. It will take more than 30 minutes to install ubuntu on the VirtualBox.
