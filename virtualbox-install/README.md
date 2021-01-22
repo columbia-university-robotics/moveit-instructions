@@ -2,7 +2,7 @@
 These instructions in general should work for mac as well.
 
 The following Instructions were gathered from the following reference.
-[reference](https://gadgetliv.com/install-ubuntu-on-virtualbox-in-windows/#:~:text=How to Install Ubuntu on VirtualBox in Windows,Restart Ubuntu after Installation. ... More items…)
+[reference](https://gadgetliv.com/install-ubuntu-on-virtualbox-in-windows)
 
 ### Step 1: Download Oracle VirtualBox
 
@@ -41,6 +41,7 @@ I used to picture from the reference site , but I actually used fixed memory and
 ![memory-select](./vm-media/6.png)
 
 Now you have to select the size of the virtual hard disk. Site suggested to use more than 15 GB. (I actually chose 16 and fixed memory to push the limits and checked that when moveit and ROS were all installed the machine total memory used in 14.2GB .. I HIGHLY SUGGEST you use more memory if you can that way we can have some cushion space for more packages and cat videos if desired.. ESPECIALLY if you're using fixed memory)
+
 ![memsize-select](./vm-media/7.png)
 
 # Step 5: Insert the Ubuntu ISO file
