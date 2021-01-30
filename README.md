@@ -54,7 +54,7 @@ sudo apt-get install python3-osrf-pycommon python3-catkin-tools -y
 catkin config --extend /opt/ros/${ROS_DISTRO} --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
 
-#Note October 2020 Until the next ROS release sync, you will need to install ros-noetic-fcl manually from the ros-testing repositories:
+Note October 2020 Until the next ROS release sync, you will need to install ros-noetic-fcl manually from the ros-testing repositories:
 ```
 sudo apt install ros-noetic-fcl -y
 ```
@@ -70,7 +70,7 @@ Setup your environment - you can do this every time you work with this particula
 ```
 source ~/workspace/ws_moveit/devel/setup.bash 
 ```
-# STEP 3
+# STEP 4
 ### lets party
 Open another terminal and make sure it's pointing to the same directory and has the necessary environment variables.
 ```
