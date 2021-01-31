@@ -62,7 +62,7 @@ sudo apt install ros-noetic-fcl -y
 ### Build MoveIt
 we shouldn't have to run this funny looking catkin_make but if allowed a clean build.  [reference](https://answers.ros.org/question/353111/following-installation-instructions-catkin_make-generates-a-cmake-error/)
 ```
-sudo apt install ros-noetic-rostest -y
+# sudo apt install ros-noetic-rostest -y # only uncomment this if it it didn't get downloaded before for some weird reason and catkin_make doesn't work
 catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
 ```
 ### Source the Catkin Workspace
