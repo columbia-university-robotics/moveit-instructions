@@ -8,8 +8,6 @@ In this tutorial we will learn how to boot from USB flash drive. This option is 
 #### Step 1A: Buy a 128GB flash drive with fast read/write speeds
 I bought the drive in [this link](https://www.amazon.com/dp/B07BPK3XWW), but there are many others available at different price points. Make the USB you buy is at least a USB 3.0 and has at least 16GB capacity.
 
-![name-select](./media/step-1a.png)
-
 #### Step 1B: Get a 4GB USB stick
 You should have a random flash drive lying around your house. You will need it!
 
