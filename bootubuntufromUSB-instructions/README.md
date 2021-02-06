@@ -167,7 +167,9 @@ You can also use the below screenshot for reference. This screenshot has a swap 
 
 #### Step 7J: Remove both the 4GB USB and the 12GB USB
 
-## Step 8: Plug in the 128GB USB and reboot your machine with the Boot from USB option again.
+## Step 8: Plug in the 128GB USB and reboot your machine with the Boot from USB option.
+
+If (while trying to boot your machine in Ubuntu or Windows) your machine takes you to GRUB screen with a command line, just type "exit" and the machine will take you to an Advanced Recovery page where you can choose to boot from whatever device you desire.
 
 ## Step 9: Welcome to Ubuntu
 
@@ -193,4 +195,3 @@ You can also use the below screenshot for reference. This screenshot has a swap 
 - You will need to restart your machine and go back to UEFI Firmware settings (as described in step 4).
 - Delete the ubuntu option and leave the remaining options as is (leave USB above Windows).
 - Restart your machine and it should boot in Windows.
-4. If (while trying to boot your machine in Ubuntu or Windows) your machine takes you to GRUB screen with a command line, just type "exit" and the machine will take you to an Advanced Recovery page where you can choose to boot from whatever device you desire.
