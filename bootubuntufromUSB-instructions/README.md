@@ -7,6 +7,7 @@ In this tutorial we will learn how to boot from USB flash drive. This option is 
 
 #### Step 1A: Buy a 128GB flash drive with fast read/write speeds
 I bought the drive in [this link](https://www.amazon.com/dp/B07BPK3XWW), but there are many others available at different price points. Make the USB you buy is at least a USB 3.0 and has at least 16GB capacity.
+
 ![name-select](./media/step-1a.png)
 
 #### Step 1B: Get a 4GB USB stick
@@ -27,15 +28,18 @@ Rufus is a free and open-source USB stick writing tool. I downloaded the portabl
 #### Step 3B: Plug in the 4GB USB to your computer
 
 #### Step 3C: Open Rufus and select device
-Click on the 4GB USB device from the “Device” field
+Click on the 4GB USB device from the “Device” field.
+
 ![name-select](./media/step-3c.png)
 
 #### Step 3D: Select the Ubuntu ISO file
 Click the select to the right of “Boot selection”. Select the appropriate ISO file and click on Open.
+
 ![name-select](./media/step-3d.png)
 
 #### Step 3E: Write the ISO
 Leave all other parameters with their default values and click start to initiate the write process.
+
 ![name-select](./media/step-3e.png)
 
 #### Step 3F: Warnings
@@ -64,6 +68,7 @@ Your machine should boot as Ubuntu OS on the 4GB USB.
 
 #### Step 5A: Select the “Try Ubuntu” option.
 The system will boot into the Ubuntu live desktop environment.
+
 ![name-select](./media/step-5a.png)
 
 ## Step 6: Partition your 128GB USB
@@ -72,46 +77,57 @@ We will now configure your 128GB USB to have a persistent storage space. This me
 #### Step 6A: While leaving your 4GB USB inserted, also insert your 128GB USB into the computer or USB hub.
 
 #### Step 6B: From the left dock panel, click “show applications” and search for Gparted.
+
 ![name-select](./media/step-6b.png)
 
 ## This is the most critical step!!! Choosing a wrong device could destroy the data on your PC.
 
 #### Step 6C: At the top-right of the GParted window, select your USB from the drop-down menu.
 Pay attention to the drives and make sure you are selecting the 128GB flash drive (should be sdb).
+
 ![name-select](./media/step-6c.png)
 
 #### Step 6D: Clear partitions on the USB drive by right-clicking on your USB, choose Format then select the cleared option.
+
 ![name-select](./media/step-6d.png)
 
 #### Step 6E: Click the apply button that is the green colored right mark located on the top panel.
+
 ![name-select](./media/step-6e.png)
 
 #### Step 6F: An alert message will appear warning you about losing data when formatting the USB.  Click Apply on the alert message.
+
 ![name-select](./media/step-6f.png)
 
 #### Step 6G: After the operation completes successfully, click close to continue.
 
 #### Step 6H: The USB should be like the below screenshot. You can now close the GParted application. You have successfully partitioned your USB drive to be able to install Ubuntu.
+
 ![name-select](./media/step-6h.png)
 
 ## Step 7: Install Ubuntu on the 128GB USB
 
 #### Step 7A: From the desktop, click on the install Ubuntu icon.
+
 ![name-select](./media/step-7a.png)
 
 #### Step 7B: Continue installation
 Now select your preferred language and click on the Install Ubuntu button. Press continue.
 Next, select the Keyboard layout, here I am choosing English US. You can select any other layout which you are using right now on your Windows 10 PC or laptop. Press continue.
 Select Normal Installation and the “install third-party software” button. Press continue.
+
 ![name-select](./media/step-7b.png)
 
 #### Step 7C: In the installation type screen choose “something else” option then press Continue.
+
 ![name-select](./media/step-7c.png)
 
 #### Step 7D: Choose the USB and next we will start creating partitions.
+
 ![name-select](./media/step-7d.png)
 
 #### Step 7E: Choose the new partition table button. Then press the plus sign to create new partitions.
+
 ![name-select](./media/step-7e.png)
 
 #### Step 7F: Create the below two paritions
@@ -133,6 +149,7 @@ You can also use the below screenshot for reference. This screenshot has a swap 
 ![name-select](./media/step-7f1.png)
 
 #### Step 7G: Press Install now to start the installation.
+
 ![name-select](./media/step-7g.png)
 
 #### Step 7H: After installation complete, click “Continue Testing”.
@@ -148,9 +165,11 @@ You can also use the below screenshot for reference. This screenshot has a swap 
 #### Step 9A: Now enter the password which you created during installation setup and you will be logged into Ubuntu desktop.
 
 #### Step 9B: Right click an empty part of the desktop and then press "Display Settings"
+
 ![name-select](./media/step-9b.png)
 
 #### Step 9C: Click on the "Power" tab (near the bottom). Where it says Power Saving click on where it says "5 minutes" and change it to "Never".
+
 ![name-select](./media/step-9c.png)
 
 #### Step 9D: Install software updates. Install zoom and slack.
