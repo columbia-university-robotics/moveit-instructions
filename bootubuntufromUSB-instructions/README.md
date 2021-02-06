@@ -1,7 +1,11 @@
-# How to boot Ubuntu from flash drive
+# How to boot Ubuntu from USB flash drive
 There are many options for installing Ubuntu on your computer: Native boot or dual-boot, Boot from USB flash drive, Virtual machines, Docker, etc.
+
 In this tutorial we will learn how to boot from USB flash drive. This option is good because it does not alter your existing operating system.
 (These instructions should work whether you have a PC or Mac.)
+
+#### Important Note:
+The screenshots in the tutorial below are for reference only, and the USB sizes that are in the images may not match what is stated in the text. Please follow the written steps, and only use the screenshots to double check your work. Please make sure to choose the correct option for your USB size, else you risk deleting all of your computer's memory.
 
 ## Step 1: Gather materials
 
@@ -13,6 +17,11 @@ You should have a random flash drive lying around your house. You will need it!
 
 #### Step 1C: Make sure you have at least two USB type A ports on your machine.
 If not, you will need a [USB multiport hub](https://www.amazon.com/Anker-Extended-MacBook-Surface-Notebook/dp/B07L32B9C2).
+
+#### Step 1D: Get an external mouse and keyboard (Not required for all users)
+I would recommend getting an external mouse and keyboard because Ubuntu may not recognize the in-built mouse and keyboard due to missing plugins. Keep in mind that if you get a wired external mouse and keyboard then ensure that your machine has that many USB type A ports.
+
+On my Microsoft Surface Pro, I was able to use the trackpad but not keyboard, so I enabled the on-screen keyboard through the Accessibility settings. On my Microsoft Surface Laptop, I wasn't able to use the trackpad or keyboard, leaving me without any way to use the machine. So I had to get an external mouse and keyboard.
 
 ## Step 2: Download Ubuntu ISO file
 Go to [Ubuntu Download Page](https://ubuntu.com/download/desktop) and get Ubuntu 20.04.
@@ -51,6 +60,8 @@ When Rufus has finished writing the USB device, the Status bar will be green fil
 
 ## Step 4: Boot your machine from your newly written USB
 Read your manufacturer’s instructions on how to boot from a USB.
+
+Note: My Microsoft Surface Laptop would continuously boot from Windows even though I pressed the Volume Down key while booting. To fix this you will need to go to the UEFI Firmware settings on your machine (either by holding the Volume Up key while booting, or go to Windows Settings -> Update & Security -> Recovery -> Advanced Startup -> Restart Now). Then your machine will restart into the UEFI Firmware. Navigate to "Boot Configuration" and move the order of "USB Device" to the top (above Windows).
 
 #### Step 4A: Power off your computer and remove the 4GB USB.
 
@@ -173,3 +184,13 @@ You can also use the below screenshot for reference. This screenshot has a swap 
 #### Step 9D: Install software updates. Install zoom and slack.
 
 ## Step 10: ENJOY!
+
+#### Important Notes and Fixes for Issues You May Come Across:
+1. Do not remove the USB while your machine is running Ubuntu. Always make sure to power the machine off before removing the USB.
+2. After install is complete, I would recommend that you try to boot your computer using Windows/macOS to make sure you are able to boot normally.
+3. My Microsoft Surface Laptop gets stuck in the boot mode when I try to boot from Windows after having just run Ubuntu.
+- That is because the UEFI Firmware settings (Boot Configuration) added a new "ubuntu" boot option to the top of the list.
+- You will need to restart your machine and go back to UEFI Firmware settings (as described in step 4).
+- Delete the ubuntu option and leave the remaining options as is (leave USB above Windows).
+- Restart your machine and it should boot in Windows.
+4. If (while trying to boot your machine in Ubuntu or Windows) your machine takes you to GRUB screen with a command line, just type "exit" and the machine will take you to an Advanced Recovery page where you can choose to boot from whatever device you desire.
