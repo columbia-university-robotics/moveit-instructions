@@ -113,4 +113,25 @@ Now run the Python code directly in the other shell using rosrun. Note in some i
 rosrun moveit_tutorials move_group_python_interface_tutorial.py
 ```
 
+# NEXT TIME YOU WANT TO RUN MOVE-IT, FOLLOW THESE STEPS:
+
+1. Open a terminal and run the below commands
+```
+cd ~/workspace/ws_moveit
+source /opt/ros/noetic/setup.bash
+source ~/workspace/ws_moveit/devel/setup.bash 
+roslaunch panda_moveit_config demo.launch
+```
+2. Open another terminal and run the below commands
+```
+source ~/workspace/ws_moveit/devel/setup.bash 
+roslaunch moveit_tutorials move_group_interface_tutorial.launch
+```
+3. If you make changes to the CPP file, run the below commands before doing steps 1 and 2
+```
+cd ~/workspace/ws_moveit
+catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
+```
+
+
 enjoy :)
